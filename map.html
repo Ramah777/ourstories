@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>OurStories - Map sample</title>
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">	
+		<link href="css/mapstyle.css" rel="stylesheet">
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJyMRA0og8zyH1WiqCVTOjC6CBVfDrEak"></script>
+		<script src="js/jquery.googlemap.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/myapp.js"></script>
+		<style>
+			#map {height: 900px; width: 100%; }
+			#map {padding: 0;}
+			#search{background-color: orange;}
+			.container{ background-color: skyblue;}
+		</style>
+	</head>
+	<body>
+	 <div class="pageContainer">
+        <div class="addressContainer">
+        	<div class="container">
+        		 <div class="panel panel-default container">
+       
+        		 	
+
+            
+			<h1>Select area</h1>
+			<form id="search">
+				<select id="area">
+					<option value=''>-Select-</option>
+					<option value='TORNIO'>TORNIO</option>
+					<option value='YLITORNIO'>YLITORNIO</option>
+					<option value='PELLO'>PELLO</option>
+					<option value='KOLARI'>KOLARI</option>
+					<option value='MUONIO'>MUONIO</option>
+					<option value='KILPISJÄRVI'>KILPISJÄRVI</option>
+				</select>
+				<input type="submit" value="Show"/>
+				<a href="index.html">Home</a>
+			</form>
+        </div>
+    
+        <div class="embedContainer">
+            <div class="googleMap">
+				<div id="map"></div>
+			</div>
+        </div>
+		
+		
+		
+	  </div>
+	</body>
+</html>
